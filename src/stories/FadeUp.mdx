@@ -1,0 +1,30 @@
+import { Canvas, Controls, Meta } from '@storybook/blocks';
+ 
+import * as FadeUpStories from './FadeUp.stories';
+ 
+<Meta of={FadeUpStories} />
+
+ 
+# FadeUp
+
+The FadeUp component is a React component that provides a fade-up animation effect to its child elements. It's designed to enhance the visual appeal of your application by smoothly revealing content as it enters the viewport.
+
+
+### Default Usage
+
+<Canvas of={FadeUpStories.Default} />
+
+This example shows the default behavior of the FadeUp component.
+
+### Custom Duration 
+
+<Canvas of={FadeUpStories.WithLongDuration} />
+
+### Custom Delay
+
+<Canvas of={FadeUpStories.WithLongDelay} />
+
+## Notes
+
+- The FadeUp component uses the Intersection Observer API to detect when the content enters the viewport.
+- For the best performance, avoid nesting FadeUp components or using them for very small elements.
